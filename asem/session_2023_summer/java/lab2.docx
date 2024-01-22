@@ -1,0 +1,221 @@
+// Ex1 Implementarea instrucțiunii If
+// public class InstructiuneaIf2 { 
+//     public static void main(String args[]){
+//        int positiveNumber = 5;
+//        boolean isNumber = true;
+//        if(isNumber) 
+//           System.out.println("Este numar !");
+//        if(positiveNumber > 0) {
+//           System.out.println("Este numar pozitiv !");
+//        }
+//     }
+//  }
+// file: InstructiuneaIf2.java
+// Output:
+// Este numar !
+// Este numar pozitiv !
+
+//A) Implementarea instructiunei If-else
+
+// public class InstructiuneaIfElse2 { 
+//     public static void main(String args[]){
+//        int num1 = 15;
+//        int num2 = 25;
+//        int max;
+//        if(num1 > num2) 
+//           max = num1;
+//        else 
+//           max = num2;
+//        System.out.println("Maximul este "+max);
+//     }
+//  }
+// file: InstructiuneaIfElse2.java
+//  Output: 
+//  Maximul este 25
+
+ //B) Operatorul conditional ?
+//  public class OperatorulConditional2 { 
+//     public static void main(String args[]){
+//        int num1 = 35;
+//        int num2 = 45;
+//        int max = num1 > num2 ? num1 : num2;
+//        System.out.println("Maximul este "+max);
+//     }
+//  }
+// file: OperatorulConditional2.java
+// Output:   
+// Maximul este 45
+
+ //Instrucțiunea DoWhile în Java
+//  public class DoWhile2 { 
+//     public static void main(String args[]){
+//        int nSum = 0;
+//        int i = 0;
+//        int n = 10;
+//        do {
+//           i++;
+//           nSum = nSum + i;
+//        }while(i < n);
+//        System.out.println("Suma primelor "+n+" numere este "+nSum);
+//     }
+//  }
+// file: DoWhile2.java
+// Output: Suma primelor 10 numere este 55
+
+ //Acelasi exemplu prin instructiunea WhileDo
+//  public class WhileDo2 { 
+//     public static void main(String args[]){
+//        int nSum = 0;
+//        int i = 0;
+//        int n = 10;
+//        while(i < n) {
+//           i++;
+//           nSum = nSum + i;
+//        }
+//        System.out.println("Suma primelor "+n+" numere este "+nSum);
+//     }
+//  }
+// file: WhileDo2.java
+// Output:
+// Suma primelor 10 numere este 55 
+
+
+ //Implementarea instrucțiunii Switch
+//  public class InstrSwitch2 { 
+//     public static void main(String args[]){
+//        int dayOfWeek = 3;
+//        String dayName;
+//        switch(dayOfWeek) {
+//           case 1: dayName = "Luni"; break;
+//           case 2: dayName = "Marti"; break;
+//           case 3: dayName = "Miercuri"; break;
+//           case 4: dayName = "Joi"; break;
+//           case 5: dayName = "Vineri"; break;
+//           case 6: dayName = "Sambata"; break;
+//           case 7: dayName = "Duminica"; break;
+//           default: dayName = "Zi invalida"; break;
+//        }
+//        System.out.println("Ziua "+dayOfWeek+" este "+dayName);
+//     }
+//  }
+
+// file: InstrSwitch2.java
+// Output:
+// Ziua 3 este Miercuri
+
+
+ //Instr. for cu metoda Random
+//  public class RandomFor { 
+//     public static void main(String[] args){
+//        int val;
+//        int sum = 0;
+//        for(int i = 1; i <= 10; i++){
+//           val = (int) (Math.random()*100);
+//           System.out.println("Valoarea "+i+": "+val);
+//           sum += val;
+//        }
+//        System.out.println("Suma valorilor este "+sum);
+//     }
+//  }
+
+// file: RandomFor.java
+// Output:
+// Valoarea 1: 25
+// Valoarea 2: 24
+// Valoarea 3: 38
+// Valoarea 4: 5
+// Valoarea 5: 69
+// Valoarea 6: 37
+// Valoarea 7: 68
+// Valoarea 8: 98
+// Valoarea 9: 76
+// Valoarea 10: 44
+// Suma valorilor este 484
+
+
+
+ //Instructiunea try-catch
+//  public class TryCatch { 
+//     public static void main(String[] args){
+//        int num1 = 10;
+//        int num2 = 0;
+//        try{
+//           int result = num1/num2;
+//           System.out.println("Rezultatul impartirii este "+result);
+//        }catch(ArithmeticException e){
+//           System.out.println("Nu se poate imparti la 0");
+//        }
+//     }
+//  }
+
+// file: TryCatch.java
+// Output:
+// Nu se poate imparti la 0
+
+
+
+
+ //Sa se scrie un program care calculeaza valoarea medie a tuturor
+//componentelor unui array unidimensional.
+//  public class AverageOfArray { 
+//     public static void main(String[] args){
+//        double[] arr = {2.5, 3.7, 1.2, 4.8, 2.9};
+//        double sum = 0;
+//        for(int i = 0; i < arr.length; i++){
+//           sum += arr[i];
+//        }
+//        double average = sum/arr.length;
+//        System.out.println("Valoarea medie a tuturor componentelor este "+average);
+//     }
+//  }
+
+// file: AverageOfArray.java
+// Output: 
+// Valoarea medie a tuturor componentelor este 3.02
+
+
+ // In exemplul dat este declarat un tablou cu 4 linii si 4 coloane
+//cu elemente de tip double. Elementele aflate pe diagonala 
+// public class DiagonalArray { 
+//     public static void main(String[] args){
+//        int[][] arr = new int[5][5];
+//        for(int i = 0; i < arr.length; i++){
+//           for(int j = 0; j < arr[i].length; j++){
+//              if(i == j){
+//                 arr[i][j] = 1;
+//              }else{
+//                 arr[i][j] = 0;
+//              }
+//              System.out.print(arr[i][j]+" ");
+//           }
+//           System.out.println();
+//        }
+//     }
+//  }
+
+// file: DiagonalArray.java
+// Output: 
+ 
+// 1 0 0 0 0 
+// 0 1 0 0 0 
+// 0 0 1 0 0 
+// 0 0 0 1 0 
+// 0 0 0 0 1 
+
+
+
+ //Sa se scrie un program care declara un tablou unidimensional si
+//vizualizeaza toate componentele sale.
+// public class OneDimensionalArray { 
+//     public static void main(String[] args){
+//        int[] arr = {2, 5, 1, 9, 4};
+//        for(int i = 0; i < arr.length; i++){
+//           System.out.print(arr[i]+" ");
+//        }
+//     }
+//  }
+
+
+// file: OneDimensionalArray.java
+// Output: 
+// 2 5 1 9 4 
